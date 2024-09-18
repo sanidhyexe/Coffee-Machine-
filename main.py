@@ -80,7 +80,7 @@ while is_on:
                 print(f"Returning change: {amount:.2f} $")
             elif amount == 0 and paid_amount == MENU[choice]['cost']:
                 print(f"Here is your {choice} ���️, enjoy!")
-            print(art.art[choice])
+            print(art.art['coffee'])
             for items in resources:
                 resources[items] -= MENU[choice]['ingredients'][items]
             profit += MENU[choice]['cost']
